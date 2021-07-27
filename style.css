@@ -1,9 +1,182 @@
-* {
-    margin: 0;
-    padding: 0;
-    background-color: rgba(42, 42, 46, 1)
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+:root {
+    --colorMain: #293b4c;
+    --colorDark: #263443;
+    --colorDarkPink: #a23a83;
+    --textTitle: #e6e6e5;
+    --textMain: #869499;
 }
 
-img {
-    width: 150px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: block;
+    background-color: var(--colorMain);
+    color: var(--textMain);
+}
+
+
+/*////////////////////////////////////////////////
+NAVIGATION BAR
+////////////////////////////////////////////////*/
+
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--colorDark);
+    box-shadow: 0px 0px 5px 0px var(--colorDark);
+}
+
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--textTitle);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--textTitle);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    cursor: pointer;
+    width: 40px;
+    margin-right: 20px;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: var(--colorDarkPink);
+}
+
+.apply {
+    margin-left: auto;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: var(--colorDarkPink);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {}
+
+.hdivider {
+    background-color: var(--colorDarkPink);
+    height: 4px;
+    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+}
+
+
+/*/////////////////////////////////////////////////
+WEBSITE CORE
+////////////////////////////////////////////////*/
+
+.pages {
+    display: block;
+    align-items: center;
+    padding: 100px;
+}
+
+.landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px 10px;
+    padding: 20px 0px;
+}
+
+#about,
+#sponsors,
+#faq {
+    background-color: #263443;
+}
+
+.illustration {
+    width: 500px;
+}
+
+.registration {
+    margin: 20px 0px;
+}
+
+
+/*
+#hacker {
+    border: var(--colorDarkPink) solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+
+#mentor {
+    background-color: var(--colorDarkPink);
+    border: var(--colorDarkPink) solid 2px;
+    border-radius: 5px;
+    padding: 10px;
+}*/
+
+
+/*////////////////////////////////////////////////
+SCHEDULE TABS TEST
+
+TRACKS
+
+CHALLENGES
+
+Team
+
+FAQ
+////////////////////////////////////////////////*/
+
+
+/*//////////////////////////////////////////
+BOTTOM END
+//////////////////////////////////////////*/
+
+footer {
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+footer p {
+    background-color: #263443;
+    padding: 10px;
 }
