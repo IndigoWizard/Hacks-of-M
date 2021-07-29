@@ -1,24 +1,85 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 :root {
+    /*Original Palette: GreyBlue+PinkRed
     --colorMain: #293b4c;
     --colorDark: #263443;
-    --colorDarkPink: #a23a83;
+    --colorDarker: #23323f;
+    --colorVariant: #c46198;
+    --colorVariantDark: #a23a83;
     --textTitle: #e6e6e5;
-    --textMain: #869499;
+    --textMain: #869499;*/
+    /*Test Palette: */
+    --colorMain: #292a4c;
+    --colorDark: #262843;
+    --colorDarker: #23283f;
+    --colorVariant: #c46198;
+    --colorVariantDark: #a23a83;
+    --colorVariantVivid: #bc1d33;
+    --textTitle: #e6e6e5;
+    --textMain: #a2b2b8;
+    /*Test Palette 2: */
+    /*
+    --colorMain: ;
+    --colorDark: ;
+    --colorDarker: ;
+    --colorVariant: ;
+    --colorVariantDark: ;
+    --textTitle: ;
+    --textMain: ;
+    */
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
 body {
+    max-width: 100vw;
+    height: 100vh;
     display: block;
     background-color: var(--colorMain);
     color: var(--textMain);
+}
+
+h1 {
+    font-size: 48px;
+    color: var(--textTitle);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 32px;
+    color: var(--colorVariant);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 27px;
+    font-weight: 600;
+}
+
+h4 span {
+    font-size: 42px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--textTitle);
+}
+
+.hdivider {
+    background-color: var(--colorVariantDark);
+    height: 4px;
+    width: 120px;
+    margin-bottom: 20px;
+    border-radius: 50px;
 }
 
 
@@ -27,32 +88,23 @@ NAVIGATION BAR
 ////////////////////////////////////////////////*/
 
 header {
+    min-width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    box-sizing: border-box;
     padding: 20px 5%;
-    background-color: var(--colorDark);
-    box-shadow: 0px 0px 5px 0px var(--colorDark);
+    background-color: var(--colorDarker);
+    box-shadow: 0px 0px 5px 0px var(--colorDarker);
 }
 
-li,
-a,
-button {
-    font-weight: 500;
+nav li,
+nav a,
+nav button {
+    font-weight: 400;
     font-size: 16px;
     color: var(--textTitle);
     text-decoration: none;
-}
-
-h1 {
-    font-size: 48px;
-    color: var(--textTitle);
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
 }
 
 .logo {
@@ -71,11 +123,15 @@ h2 {
 }
 
 .navlinks li a {
-    transition: all 0.3s ease 0s;
+    transition: all 0.2s ease 0s;
+    font-weight: 600;
 }
 
 .navlinks li a:hover {
-    color: var(--colorDarkPink);
+    color: var(--colorVariantDark);
+    border-bottom: var(--colorVariantDark) 3px solid;
+    padding-bottom: 8px;
+    border-radius: 2px;
 }
 
 .apply {
@@ -83,52 +139,57 @@ h2 {
 }
 
 button {
-    padding: 9px 25px;
-    background-color: var(--colorDarkPink);
+    padding: 10px 15px;
+    background-color: var(--colorVariantDark);
+    color: var(--textTitle);
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
 
-button:hover {}
-
-.hdivider {
-    background-color: var(--colorDarkPink);
-    height: 4px;
-    width: 120px;
-    margin-bottom: 20px;
-    border-radius: 50px;
+button:hover {
+    background-color: var(--colorVariant);
+    transform: translateY(-1.5px);
 }
 
 
 /*/////////////////////////////////////////////////
-WEBSITE CORE
+WEBSITE Main
 ////////////////////////////////////////////////*/
+
+#about,
+#sponsors,
+#faq {
+    background-color: var(--colorDark);
+}
+
+main {
+    margin: 5% 0%;
+}
 
 .pages {
     display: block;
     align-items: center;
-    padding: 100px;
+    margin: 5px 0 50px;
+    padding: 5% 5%;
 }
 
 .landing {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center;
-    margin: 10px 10px;
-    padding: 20px 0px;
+    width: 100%;
+    max-width: 100vw;
 }
 
-#about,
-#sponsors,
-#faq {
-    background-color: #263443;
-}
-
-.illustration {
-    width: 500px;
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px;
 }
 
 .registration {
@@ -137,20 +198,24 @@ WEBSITE CORE
 
 
 /*
-#hacker {
-    border: var(--colorDarkPink) solid 2px;
-    border-radius: 5px;
-    padding: 10px;
+
+.textOverlay {
+    filter: var(--colorVariantDark);
+    fill-opacity: 1;
 }
 
+#AboutBg {
+    max-width: 100%;
+}
+*/
 
-
-#mentor {
-    background-color: var(--colorDarkPink);
-    border: var(--colorDarkPink) solid 2px;
-    border-radius: 5px;
-    padding: 10px;
-}*/
+.schedule,
+.tracks,
+.challenges {
+    margin: 100px 0;
+    background-color: var(--colorDark);
+    padding: 0 25px;
+}
 
 
 /*////////////////////////////////////////////////
@@ -177,6 +242,6 @@ footer {
 }
 
 footer p {
-    background-color: #263443;
+    background-color: var(--colorDarker);
     padding: 10px;
 }
