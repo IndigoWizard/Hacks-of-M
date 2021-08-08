@@ -1,32 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 :root {
-    /*Original Palette: GreyBlue+PinkRed
-    --colorMain: #293b4c;
-    --colorDark: #263443;
-    --colorDarker: #23323f;
-    --colorVariant: #c46198;
-    --colorVariantDark: #a23a83;
-    --textTitle: #e6e6e5;
-    --textMain: #869499;*/
-    /*Test Palette: */
     --colorMain: #292a4c;
     --colorDark: #262843;
-    --colorDarker: #23283f;
+    --colorDarker: #22273d;
+    --colorDarkerUltra: #21233b;
     --colorVariant: #c46198;
     --colorVariantDark: #a23a83;
     --colorVariantVivid: #bc1d33;
     --textTitle: #e6e6e5;
     --textMain: #a2b2b8;
-    /*Test Palette 2: */
-    /*
-    --colorMain: ;
-    --colorDark: ;
-    --colorDarker: ;
-    --colorVariant: ;
-    --colorVariantDark: ;
-    --textTitle: ;
-    --textMain: ;
-    */
 }
 
 * {
@@ -142,6 +124,7 @@ button {
     padding: 10px 15px;
     background-color: var(--colorVariantDark);
     color: var(--textTitle);
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -149,7 +132,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--colorVariant);
+    background-color: var(--colorVariantVivid);
     transform: translateY(-1.5px);
 }
 
@@ -158,14 +141,20 @@ button:hover {
 WEBSITE Main
 ////////////////////////////////////////////////*/
 
+main {
+    margin: 5% 0%;
+}
+
 #about,
 #sponsors,
 #faq {
     background-color: var(--colorDark);
 }
 
-main {
-    margin: 5% 0%;
+#wth,
+#team,
+#contact {
+    background-color: var(--colorMain);
 }
 
 .pages {
@@ -174,6 +163,11 @@ main {
     margin: 5px 0 50px;
     padding: 5% 5%;
 }
+
+
+/*
+///////////////////////////// LANDING PAGE
+*/
 
 .landing {
     display: flex;
@@ -192,21 +186,91 @@ main {
     margin: 20px;
 }
 
+.landing-info {
+    border-left: wheat 2px solid;
+    padding: 50px 0 0 50px;
+}
+
 .registration {
     margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registration button {
+    margin: 5px 5px;
+    font-size: 22px;
+    color: var(--colorMain);
 }
 
 
 /*
+/////////////////////////// ABOUT SECTION
+*/
 
-.textOverlay {
-    filter: var(--colorVariantDark);
-    fill-opacity: 1;
+#about {
+    padding: 0;
+    margin-inline: 0;
 }
 
-#AboutBg {
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.about-left {
+    max-width: 40%;
+    padding: 5% 0 5% 5%;
+}
+
+.about-stats ul {
+    list-style: none;
+    display: flex;
+}
+
+.stats {
+    background-color: var(--colorDarkerUltra);
+    border: 1px solid var(--colorDarker);
+    border-radius: 4px;
+    min-width: 160px;
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stats span {
+    font-weight: 800;
+    color: var(--textTitle);
+}
+
+
+/* .about-right {
+    background-image: url("/src/hackathon.jpg");
+    background-size: cover;
+    flex-basis: 50%;
+    width: 60%;
+} */
+
+#AboutImage {
     max-width: 100%;
+    width: 700px;
+    height: 100%;
 }
+
+
+/*
+///////////////////////////
 */
 
 .schedule,
@@ -219,6 +283,8 @@ main {
 
 
 /*////////////////////////////////////////////////
+About
+
 SCHEDULE TABS TEST
 
 TRACKS

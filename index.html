@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="./HouseOfM.svg">
+    <link rel="shortcut icon" href="./src/HouseOfM.svg" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
     <title>Hacks Of M</title>
@@ -14,7 +15,9 @@
 <body>
 
     <header>
-        <img class="logo" src="./src/HouseOfM.svg" alt="logo">
+        <a href="#">
+            <img class="logo" src="./src/HouseOfM.svg" alt="logo">
+        </a>
         <nav>
             <ul class="navlinks">
                 <li><a href="#about">About</a></li>
@@ -34,7 +37,7 @@
 
             <div class="landing">
 
-                <div class="info">
+                <div class="landing-info">
                     <h4 class="landing-text">
                         <span>House of M</span> presents
                     </h4>
@@ -43,7 +46,7 @@
                         Algerian Hacker Community.
                     </h4>
                     <h4 class="landing-text">
-                        Novermber 2-5, 2021 • Virtual Event
+                        November 2-5, 2021 • Virtual Event
                     </h4>
 
                     <div class="registration">
@@ -53,24 +56,38 @@
 
                 </div>
 
-
-
-                <img class="hero-img" src="./src/hero_img.png" alt="hero_img">
+                <img class="hero-img" src="./src/hero-img.png" alt="hero_img">
 
             </div>
 
         </section>
-        <section id="about" class="pages">
-            <h1>About</h1>
-            <div class="hdivider"></div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa voluptates distinctio nobis rem eligendi, alias animi cumque doloribus ipsam earum tempora enim corrupti iure inventore blanditiis ab libero quae saepe, perferendis nesciunt? Obcaecati
-                minima dolor dicta perferendis vero impedit excepturi consequatur ipsum deserunt harum perspiciatis, earum recusandae vel nesciunt ipsa.</p>
-            <!--    
-                <div class="textOverlay">
-                <img src="https://tradinginsider.fr/wp-content/uploads/2019/04/hackathons-1998x1100.jpg" alt="hackathonImage" id="AboutBg">
 
-            </div>-->
+        <section id="about" class="pages">
+
+            <div class="about">
+
+                <div class="about-left">
+                    <h1>About</h1>
+                    <div class="hdivider"></div>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa voluptates distinctio nobis rem eligendi, alias animi cumque doloribus ipsam earum tempora enim corrupti iure inventore blanditiis ab libero quae saepe, perferendis nesciunt?
+                    <ul class="about-stats">
+                        <li class="stats"> Participants: <span>+100</span></li>
+                        <li class="stats"> Projects: <span>45</span></li>
+                        <li class="stats"> Tracks: <span>8</span></li>
+                        <li class="stats"> Challenges: <span>12</span></li>
+                        <li class="stats"> Sponsors: <span>15</span></li>
+                        <li class="stats"> Workshops: <span>7</span></li>
+                    </ul>
+                </div>
+
+                <div class="about-right">
+                    <img src="./src/hackathon.jpg" alt="hackathon" id="AboutImage">
+                </div>
+
+            </div>
+
         </section>
+
         <section id="wth" class="pages">
             <h1>What the Hack?</h1>
             <div class="hdivider"></div>
@@ -81,9 +98,9 @@
                 <h2>Schedule</h2>
                 <div class="hdivider"></div>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Day 1</li>
+                    <li>Day 2</li>
+                    <li>Day 3</li>
                 </ul>
             </div>
 
@@ -91,9 +108,10 @@
                 <h2>Tracks & Industries</h2>
                 <div class="hdivider"></div>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>FineTech</li>
+                    <li>Game Dev</li>
+                    <li>Health</li>
+                    <li>AgriTech</li>
                 </ul>
             </div>
 
@@ -102,27 +120,27 @@
                 <div class="hdivider"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore beatae aliquam totam maxime tempora nesciunt iste! Rem magni omnis labore.</p>
                 <ul>
-                    <li>dqsdqs</li>
-                    <li>qdqsd</li>
-                    <li></li>
+                    <li>Transaction security protocole using Blockchain by UBS.</li>
+                    <li>Smart irrigation system by China Fruits Corp.</li>
+                    <li>VR experience game by We Make Games.</li>
                 </ul>
             </div>
 
         </section>
+
         <section id="sponsors" class="pages">
             <h1>Sponsors</h1>
             <div class="hdivider"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique asperiores autem iusto ratione id, nam minima exercitationem accusantium dolore. Dicta, non. Mollitia ratione impedit sint minima amet natus. Tenetur, sint?</p>
         </section>
+
         <section id="team" class="pages">
             <h1>Team</h1>
             <div class="hdivider"></div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p><br>
 
-
-
-
         </section>
+
         <section id="faq" class="pages">
             <h1>FAQ</h1>
             <div class="hdivider"></div>
@@ -135,9 +153,10 @@
                 <li>Lorem ipsum dolor sit amet.</li>
             </ul>
         </section>
+
         <section id="contact" class="pages">
-            <div class="hdivider"></div>
             <h1>Contact</h1>
+            <div class="hdivider"></div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eius, totam laudantium repellendus doloribus neque ad officiis repellat excepturi? Consectetur.
             </p>
