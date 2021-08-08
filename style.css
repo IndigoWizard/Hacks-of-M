@@ -3,7 +3,7 @@
     --colorMain: #292a4c;
     --colorDark: #262843;
     --colorDarker: #22273d;
-    --colorDarkerUltra: #21233b;
+    --colorDarkerUltra: #1c1938;
     --colorVariant: #c46198;
     --colorVariantDark: #a23a83;
     --colorVariantVivid: #bc1d33;
@@ -36,6 +36,13 @@ h1 {
 
 h2 {
     font-size: 32px;
+    color: var(--textTitle);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
     color: var(--colorVariant);
     margin-bottom: 20px;
     font-weight: 600;
@@ -213,59 +220,63 @@ main {
 
 #about {
     padding: 0;
-    margin-inline: 0;
 }
 
 .about {
+    background-color: var(--colorDarker);
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    align-items: stretch;
+    overflow: hidden;
 }
 
 .about-left {
-    max-width: 40%;
-    padding: 5% 0 5% 5%;
+    padding: 5%;
+    flex-basis: 50%;
 }
 
-.about-stats ul {
-    list-style: none;
-    display: flex;
+.highlight {
+    color: var(--colorVariantDark);
+}
+
+.about-text {
+    padding-top: 2.1em;
+    font-size: 16px;
+    color: var(--textMain);
+    line-height: 1.75em;
 }
 
 .stats {
-    background-color: var(--colorDarkerUltra);
-    border: 1px solid var(--colorDarker);
-    border-radius: 4px;
-    min-width: 160px;
-    height: 40px;
-    padding: 5px;
-    margin: 5px;
-    display: inline-block;
-    list-style: none;
-    font-size: 14px;
+    margin-top: 4.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-text {
+    margin: 0 2%;
+    color: var(--textMain);
+    font-size: 1.2rem;
     font-weight: 600;
-    text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
-.stats span {
-    font-weight: 800;
-    color: var(--textTitle);
+.number {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--textMain);
+    text-align: center;
 }
 
-
-/* .about-right {
-    background-image: url("/src/hackathon.jpg");
+.right {
+    background-image: url("./src/hackathon.jpg");
     background-size: cover;
     flex-basis: 50%;
-    width: 60%;
-} */
+}
 
-#AboutImage {
-    max-width: 100%;
-    width: 700px;
-    height: 100%;
+.overlay {
+    background-color: hsl(318, 47%, 43%, 0.85);
+    background-blend-mode: multiply;
 }
 
 
@@ -283,7 +294,6 @@ main {
 
 
 /*////////////////////////////////////////////////
-About
 
 SCHEDULE TABS TEST
 
@@ -294,6 +304,8 @@ CHALLENGES
 Team
 
 FAQ
+
+CONTACT
 ////////////////////////////////////////////////*/
 
 
