@@ -1,32 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
 :root {
-    /*Original Palette: GreyBlue+PinkRed
-    --colorMain: #293b4c;
-    --colorDark: #263443;
-    --colorDarker: #23323f;
-    --colorVariant: #c46198;
-    --colorVariantDark: #a23a83;
-    --textTitle: #e6e6e5;
-    --textMain: #869499;*/
-    /*Test Palette: */
     --colorMain: #292a4c;
     --colorDark: #262843;
-    --colorDarker: #23283f;
+    --colorDarker: #22273d;
+    --colorDarkerUltra: #1c1938;
     --colorVariant: #c46198;
     --colorVariantDark: #a23a83;
     --colorVariantVivid: #bc1d33;
     --textTitle: #e6e6e5;
     --textMain: #a2b2b8;
-    /*Test Palette 2: */
-    /*
-    --colorMain: ;
-    --colorDark: ;
-    --colorDarker: ;
-    --colorVariant: ;
-    --colorVariantDark: ;
-    --textTitle: ;
-    --textMain: ;
-    */
 }
 
 * {
@@ -54,6 +36,13 @@ h1 {
 
 h2 {
     font-size: 32px;
+    color: var(--textTitle);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 30px;
     color: var(--colorVariant);
     margin-bottom: 20px;
     font-weight: 600;
@@ -142,6 +131,7 @@ button {
     padding: 10px 15px;
     background-color: var(--colorVariantDark);
     color: var(--textTitle);
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -149,7 +139,7 @@ button {
 }
 
 button:hover {
-    background-color: var(--colorVariant);
+    background-color: var(--colorVariantVivid);
     transform: translateY(-1.5px);
 }
 
@@ -158,14 +148,20 @@ button:hover {
 WEBSITE Main
 ////////////////////////////////////////////////*/
 
+main {
+    margin: 5% 0%;
+}
+
 #about,
 #sponsors,
 #faq {
     background-color: var(--colorDark);
 }
 
-main {
-    margin: 5% 0%;
+#wth,
+#team,
+#contact {
+    background-color: var(--colorMain);
 }
 
 .pages {
@@ -174,6 +170,11 @@ main {
     margin: 5px 0 50px;
     padding: 5% 5%;
 }
+
+
+/*
+///////////////////////////// LANDING PAGE
+*/
 
 .landing {
     display: flex;
@@ -192,21 +193,95 @@ main {
     margin: 20px;
 }
 
+.landing-info {
+    border-left: wheat 2px solid;
+    padding: 50px 0 0 50px;
+}
+
 .registration {
     margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.registration button {
+    margin: 5px 5px;
+    font-size: 22px;
+    color: var(--colorMain);
 }
 
 
 /*
+/////////////////////////// ABOUT SECTION
+*/
 
-.textOverlay {
-    filter: var(--colorVariantDark);
-    fill-opacity: 1;
+#about {
+    padding: 0;
 }
 
-#AboutBg {
-    max-width: 100%;
+.about {
+    background-color: var(--colorDarker);
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
 }
+
+.about-left {
+    padding: 5%;
+    flex-basis: 50%;
+}
+
+.highlight {
+    color: var(--colorVariantDark);
+}
+
+.about-text {
+    padding-top: 2.1em;
+    font-size: 16px;
+    color: var(--textMain);
+    line-height: 1.75em;
+}
+
+.stats {
+    margin-top: 4.5em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats-text {
+    margin: 0 2%;
+    color: var(--textMain);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+.number {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--textMain);
+    text-align: center;
+}
+
+.right {
+    background-image: url("./src/hackathon.jpg");
+    background-size: cover;
+    flex-basis: 50%;
+}
+
+.overlay {
+    background-color: hsl(318, 47%, 43%, 0.85);
+    background-blend-mode: multiply;
+}
+
+
+/*
+///////////////////////////
 */
 
 .schedule,
@@ -219,6 +294,7 @@ main {
 
 
 /*////////////////////////////////////////////////
+
 SCHEDULE TABS TEST
 
 TRACKS
@@ -228,6 +304,8 @@ CHALLENGES
 Team
 
 FAQ
+
+CONTACT
 ////////////////////////////////////////////////*/
 
 
