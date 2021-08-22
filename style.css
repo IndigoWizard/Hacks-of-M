@@ -303,10 +303,84 @@ CHALLENGES
 
 Team
 
-FAQ
 
 CONTACT
 ////////////////////////////////////////////////*/
+
+
+/*
+/////////////////////////// FAQ SECTION
+*/
+
+.faq {
+    position: relative;
+    margin: 2em;
+}
+
+input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.question h3 {
+    background: var(--colorVariantDark);
+    color: var(--textTitle);
+    position: relative;
+    border-radius: 4px;
+    margin-bottom: 0px;
+}
+
+.question h3:hover {
+    background-color: var(--colorVariant);
+    transition: 0.15s ease-in-out;
+}
+
+label::before {
+    content: "";
+    display: none;
+    border: 15px solid transparent;
+    border-left: 20px solid white;
+}
+
+label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+}
+
+.answer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: var(--colorDarker);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.answer p {
+    padding: 2em;
+}
+
+input:checked~.question label::before {
+    border-left: 15px solid transparent;
+    border-top: 20px solid white;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+input:checked~.question~.answer {
+    max-height: 100px;
+}
+
+input:checked+.question h3 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 
 /*//////////////////////////////////////////
