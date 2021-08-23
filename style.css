@@ -339,6 +339,11 @@ input {
     transition: 0.15s ease-in-out;
 }
 
+.question h3:hover .fa.fa-arrow-right {
+    color: var(--colorVariantDark);
+    transition: 0.15s ease-in-out;
+}
+
 label::before {
     content: "";
     display: none;
@@ -352,6 +357,15 @@ label {
     display: flex;
     align-items: center;
     padding: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fa.fa-arrow-right {
+    color: var(--colorVariant);
+    transition: 0.3s ease-in-out;
 }
 
 .answer {
@@ -380,6 +394,13 @@ input:checked~.question~.answer {
 input:checked+.question h3 {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background: var(--colorVariant);
+}
+
+input:checked~.question .fa.fa-arrow-right {
+    color: var(--colorVariantDark);
+    transform: rotate(90deg);
+    transition: 0.2s ease-in-out;
 }
 
 
