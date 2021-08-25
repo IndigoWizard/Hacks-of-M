@@ -35,3 +35,21 @@
         padding-bottom: 50%;
     }
 }
+
+
+/*////////// FAQ: RESPONSIVE MOBILE VERSION/////////*/
+
+@media (max-width:800px) {
+    .faq-main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .faq-tab {
+        position: relative;
+        padding: 8px;
+        max-width: 700px;
+        width: auto;
+    }
+}
