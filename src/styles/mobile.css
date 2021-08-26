@@ -29,7 +29,7 @@
         padding-top: 3em;
     }
     .right {
-        background-image: url("./src/hackathon.jpg");
+        background-image: url("/src/assets/images/hackathon.jpg");
         height: 100%;
         order: -1;
         padding-bottom: 50%;

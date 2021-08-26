@@ -269,7 +269,7 @@ main {
 }
 
 .right {
-    background-image: url("./src/hackathon.jpg");
+    background-image: url("/src/assets/images/hackathon.jpg");
     background-size: cover;
     flex-basis: 50%;
 }
