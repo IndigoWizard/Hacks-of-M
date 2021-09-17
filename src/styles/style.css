@@ -4,9 +4,12 @@
     --colorDark: #262843;
     --colorDarker: #22273d;
     --colorDarkerUltra: #1c1938;
+    --colorPurple: #865ca4;
     --colorVariant: #c46198;
-    --colorVariantDark: #a23a83;
+    --colorVariantDark: rgb(161, 58, 130);
+    --colorVariantDark2: rgb(235, 34, 130);
     --colorVariantVivid: #bc1d33;
+    --colorLightBlue: #17cee2;
     --textTitle: #e6e6e5;
     --textMain: #a2b2b8;
 }
@@ -303,6 +306,73 @@ CHALLENGES
 
 CONTACT
 ////////////////////////////////////////////////*/
+
+
+/*
+/////////////////////////// SPONSORSHIP SECTION
+*/
+
+.sponsors-tier {
+    min-height: 200px;
+    background: linear-gradient(225deg, var(--colorLightBlue) 20%, var(--colorPurple) 60%);
+    padding: 3px;
+    margin: 15px 0;
+    border-radius: 4px;
+}
+
+.sponsors-container {
+    background: var(--colorDarker);
+    border-radius: 4px;
+}
+
+.sponsors-container h3 {
+    background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 20px 0 0 20px;
+}
+
+.sponsors-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.sponsors-logo img {
+    padding: 15px 0;
+    transition: 0.25s ease-in-out;
+}
+
+#beyond-omega img {
+    width: 260px;
+    height: auto;
+}
+
+#omega img {
+    width: 200px;
+    height: auto;
+}
+
+#alpha img {
+    width: 160px;
+    height: auto;
+}
+
+#beta img {
+    width: 100px;
+    height: auto;
+}
+
+#community-partner img {
+    width: 200px;
+    height: auto;
+}
+
+.sponsors-logo img:hover {
+    transform: scale(1.1);
+}
 
 
 /*///////////////////////////////////////////
