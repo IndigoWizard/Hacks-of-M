@@ -37,6 +37,33 @@
 }
 
 
+/*////////// SPONSORSHIP: RESPONSIVE MOBILE VERSION/////////*/
+
+@media screen and (max-width: 485px) {
+    .sponsors-logo img {
+        padding: 5px 0;
+        transition: 0.25s ease-in-out;
+    }
+     :is(#beyond-omega,
+    #beta,
+    #community-partner,
+    #omega,
+    #alpha) img {
+        padding: 0 10px 5px;
+    }
+    .sponsors-prospectus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsors-prospectus button {
+        font-size: 18px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+
+
 /*////////// FAQ: RESPONSIVE MOBILE VERSION/////////*/
 
 @media (max-width:800px) {
