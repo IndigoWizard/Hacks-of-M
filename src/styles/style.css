@@ -327,10 +327,12 @@ CONTACT
     border-radius: 4px;
 }
 
-.sponsors-container h3 {
+.sponsors-title {
     background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 600;
     padding: 20px 0 0 20px;
 }
 
