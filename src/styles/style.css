@@ -327,13 +327,11 @@ CONTACT
     border-radius: 4px;
 }
 
-.sponsors-title {
-    background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
-    background-clip: text;
+.sponsors-title h3 {
     -webkit-text-fill-color: transparent;
-    font-size: 30px;
-    font-weight: 600;
-    padding: 20px 0 0 20px;
+    background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
+    -webkit-background-clip: text;
+    padding: 20px;
 }
 
 .sponsors-logo {
@@ -341,7 +339,7 @@ CONTACT
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    padding: 15px;
+    padding: 20px;
 }
 
 .sponsors-logo img {
