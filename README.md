@@ -1,2 +1,3 @@
-HacksOfM
-Hacks of M: prorpietary hackathon event
+Hacks Of M
+
+Hacks of M: proprietary hackathon event / project
