@@ -51,10 +51,17 @@
     #alpha) img {
         padding: 0 10px 5px;
     }
+    .sponsors-title h3 {
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
+        -webkit-background-clip: text;
+        text-align: center;
+    }
     .sponsors-prospectus {
         display: flex;
         justify-content: center;
         align-items: center;
+        text-align: center;
     }
     .sponsors-prospectus button {
         font-size: 18px;
