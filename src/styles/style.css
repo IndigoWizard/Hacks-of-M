@@ -313,6 +313,9 @@ CONTACT
 /*
 /////////////////////////// SPONSORSHIP SECTION
 */
+.sponsorship-text {
+    font-size: 22px;
+}
 
 .sponsors-tier {
     min-height: 200px;
