@@ -537,11 +537,12 @@ Team
 /*
 /////////////////////////// FAQ SECTION
 */
-
+.faq-text {
+    font-size: 18px;
+}
 .faq-intro {
     padding: 2% 0;
     line-height: 1.8;
-    font-size: 18px;
 }
 
 .faq-main {
@@ -554,7 +555,6 @@ Team
     position: relative;
     padding: 8px;
     max-width: 700px;
-    width: 600px;
 }
 
 input {
@@ -573,6 +573,7 @@ input {
     border-radius: 4px;
     margin-bottom: 0px;
     box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
 
 .question h3:hover {
@@ -645,7 +646,6 @@ input:checked~.question .fa.fa-arrow-right {
 .faq-hacker-guide {
     padding: 35px 0;
     font-size: 18px;
-    font-weight: 600;
     line-height: 2;
 }
 
