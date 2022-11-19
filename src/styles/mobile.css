@@ -1,89 +1,116 @@
+/*////////// LANDING: RESPONSIVE MOBILE VERSION/////////*/
+@media(max-width: 1260px) {
+	.landing {
+		justify-content: center;
+	}
+}
+
+@media(max-width: 800px) {
+	.landing-separartor{
+		width:25vw;
+		height: 4px;
+		background: wheat;
+		border-radius: 5px;
+		margin-block: 5px;
+	}
+
+	.landing-info{
+		border-left:0;
+		/*border-top: wheat 2px solid;*/
+		padding: 5%;
+	}
+
+	.registration button {
+		width:80vw;
+	}
+}
+
 /*////////// ABOUT: RESPONSIVE MOBILE VERSION/////////*/
 
 @media (max-width: 800px) {
-    .about {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .about-left h1 {
-        text-align: center;
-    }
-    .about-left h2,
-    .about-left p {
-        text-align: left;
-    }
-    .about-left .hdivider {
-        margin: 0 auto 5%;
-        justify-content: center;
-    }
-    .stats {
-        margin-top: 0;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .stats p {
-        text-align: center;
-    }
-    .stats div {
-        padding-top: 3em;
-    }
-    .right {
-        background-image: url("../assets/images/hackathon.jpg");
-        height: 100%;
-        order: -1;
-        padding-bottom: 50%;
-    }
+	.about {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.about-left h1 {
+		text-align: center;
+	}
+	.about-left h2,
+	.about-left p {
+		text-align: left;
+	}
+	.about-left .hdivider {
+		margin: 0 auto 5%;
+		justify-content: center;
+	}
+	.stats {
+		margin-top: 0;
+		flex-direction: column;
+		justify-content: center;
+	}
+	.stats p {
+		text-align: center;
+	}
+	.stats div {
+		padding-top: 3em;
+	}
+	.right {
+		background-image: url("../assets/images/hackathon.jpg");
+		height: 100%;
+		order: -1;
+		padding-bottom: 50%;
+	}
 }
 
 
 /*////////// SPONSORSHIP: RESPONSIVE MOBILE VERSION/////////*/
 
 @media screen and (max-width: 485px) {
-    .sponsors-logo img {
-        padding: 5px 0;
-        transition: 0.25s ease-in-out;
-    }
-     :is(#beyond-omega,
-    #beta,
-    #community-partner,
-    #omega,
-    #alpha) img {
-        padding: 0 10px 5px;
-    }
-    .sponsors-title h3 {
-        -webkit-text-fill-color: transparent;
-        background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
-        -webkit-background-clip: text;
-        text-align: center;
-    }
-    .sponsors-prospectus {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    .sponsors-prospectus button {
-        font-size: 18px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
+	.sponsors-logo img {
+		padding: 5px 0;
+		transition: 0.25s ease-in-out;
+	}
+	 :is(#beyond-omega,
+	#beta,
+	#community-partner,
+	#omega,
+	#alpha) img {
+		padding: 0 10px 5px;
+	}
+	.sponsors-title h3 {
+		-webkit-text-fill-color: transparent;
+		background: -webkit-linear-gradient(30deg, var(--colorPurple) 10%, var(--colorLightBlue) 50%);
+		-webkit-background-clip: text;
+		text-align: center;
+	}
+	.sponsors-prospectus {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.sponsors-prospectus button {
+		font-size: 18px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
 }
 
 
 /*////////// FAQ: RESPONSIVE MOBILE VERSION/////////*/
 
 @media (max-width:800px) {
-    .faq-main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .faq-tab {
-        position: relative;
-        padding: 8px;
-        max-width: 700px;
-        width: auto;
-    }
+	.faq-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.faq-tab {
+		position: relative;
+		padding: 8px;
+		max-width: 700px;
+		width: auto;
+	}
 }
