@@ -232,7 +232,7 @@ main {
 .about {
 	background-color: var(--colorDarker);
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	display: flex;
 	overflow: hidden;
 }
