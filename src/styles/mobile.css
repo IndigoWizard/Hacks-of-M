@@ -53,7 +53,7 @@
 		text-align: center;
 	}
 	.stats div {
-		padding-top: 3em;
+		padding-block: 2em;
 	}
 	.right {
 		background-image: url("../assets/images/hackathon.jpg");
