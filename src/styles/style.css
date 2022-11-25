@@ -153,9 +153,9 @@ nav button {
 WEBSITE Main
 ////////////////////////////////////////////////*/
 
-main {
+/* main {
 	margin-bottom: 5%;
-}
+} */
 
 #about,
 #sponsors,
@@ -539,6 +539,10 @@ Team
 /*
 /////////////////////////// FAQ SECTION
 */
+#faq {
+	margin-bottom: 0;
+}
+
 .faq-text {
 	font-size: 18px;
 }
@@ -691,6 +695,47 @@ input:checked~.question .fa.fa-arrow-right {
 	align-items: center;
 }
 
+/*////////////////////////////////////
+CONTACT
+////////////////////////////////////
+*/
+#contact{
+	padding: 0;
+	margin-bottom: 0;
+}
+.contact{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	overflow: hidden;
+}
+
+/* .contact-info {
+	background-color: var(--colorDarkerUltra);
+} */
+
+.contact-left {
+	padding: 5%;
+	flex-basis: 50%;
+}
+
+.contact-right {
+	flex-basis: 50%;
+}
+
+.mapouter{
+	position:relative;
+	height:100vh;
+}
+
+.gmap_canvas {
+	overflow:hidden;background:none!important;
+	height:100%;
+}
+iframe{
+	width: 100%;
+	height: 100%;
+}
 
 /*//////////////////////////////////////////
 BOTTOM END
