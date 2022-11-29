@@ -114,3 +114,36 @@
 		width: auto;
 	}
 }
+
+/*////////// CONTACT: RESPONSIVE MOBILE VERSION/////////*/
+
+@media (max-width:800px) {
+	.contact {
+		width: 100vw;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.contact .hdivider {
+		margin: 0 auto 5%;
+		text-align: center;
+	}
+
+	.social-list {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5em;
+		max-width: 100%;
+		margin-top: 30px;
+		padding-bottom: 15px;
+	}
+
+	.social-list a {
+		font-size: 35px;
+	}
+}
