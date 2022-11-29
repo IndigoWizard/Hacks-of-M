@@ -153,9 +153,9 @@ nav button {
 WEBSITE Main
 ////////////////////////////////////////////////*/
 
-main {
+/* main {
 	margin-bottom: 5%;
-}
+} */
 
 #about,
 #sponsors,
@@ -539,6 +539,10 @@ Team
 /*
 /////////////////////////// FAQ SECTION
 */
+#faq {
+	margin-bottom: 0;
+}
+
 .faq-text {
 	font-size: 18px;
 }
@@ -691,6 +695,99 @@ input:checked~.question .fa.fa-arrow-right {
 	align-items: center;
 }
 
+/*////////////////////////////////////
+CONTACT
+////////////////////////////////////
+*/
+#contact{
+	padding: 0;
+	margin-bottom: 0;
+}
+.contact{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	overflow: hidden;
+}
+
+.contact-left {
+	padding: 5%;
+	flex-basis: 50%;
+}
+
+.contact-zone {
+	display:flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.contact-info i, .contact-info a {
+	color: var(--textMain);
+	font-weight: 600;
+}
+
+.contact-info a:hover, .contact-info i:hover {
+	transition: 0.15s ease-in-out;
+	color: var(--colorVariantDark);
+	cursor: pointer;
+}
+
+.contact h4 {
+	margin-block: 10px;
+}
+
+.contact-text {
+	margin-bottom: 2em;
+	font-size: 16px;
+	color: var(--textMain);
+}
+
+.social-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1.5em;
+	max-width: 80%;
+	margin-top: 16px;
+}
+
+.social-list a {
+	line-height: 0;
+	color: var(--textMain);
+	font-size: 24px;
+	transition: 0.1s ease-in-out;
+}
+
+.social-list a:hover {
+	line-height: 0;
+	transition: 0.15s ease-in-out;
+	color: var(--colorVariantDark);
+	cursor: pointer;
+}
+
+.contact-right {
+	flex-basis: 50%;
+}
+
+/* .mapouter {
+	position:relative;
+	height:100vh;
+}
+
+.gmap_canvas {
+	overflow:hidden;background:none!important;
+	height:100%;
+} */
+
+.contact-map {
+	height:100%;
+}
+
+iframe {
+	border: 0;
+	width: 100%;
+	height: 100%;
+}
 
 /*//////////////////////////////////////////
 BOTTOM END
