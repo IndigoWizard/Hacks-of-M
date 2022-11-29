@@ -769,7 +769,7 @@ CONTACT
 	flex-basis: 50%;
 }
 
-.mapouter {
+/* .mapouter {
 	position:relative;
 	height:100vh;
 }
@@ -777,9 +777,14 @@ CONTACT
 .gmap_canvas {
 	overflow:hidden;background:none!important;
 	height:100%;
+} */
+
+.contact-map {
+	height:100%;
 }
 
 iframe {
+	border: 0;
 	width: 100%;
 	height: 100%;
 }
