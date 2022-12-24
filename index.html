@@ -30,7 +30,10 @@
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</nav>
-		<a href="#" class="apply"><button>Register</button></a>
+		
+		<!-- <a href="#" class="apply"><button class="button">Register</button></a> -->
+		<i id="menu-icon" class="fa-solid fa-bars" onclick="changeIcon(this)"></i>
+		
 	</header>
 
 	<main>
@@ -45,8 +48,8 @@
 					<h4 class="landing-text">November 2-5, 2021 • Virtual Event</h4>
 
 					<div class="registration">
-						<a id="hacker" href="#" class="button"><button>Apply as Hacker</button></a>
-						<a id="mentor" href="#" class="button"><button>Apply as Mentor</button></a>
+						<a id="hacker" href="#"><button class="button">Apply as Hacker</button></a>
+						<a id="mentor" href="#"><button class="button">Apply as Mentor</button></a>
 					</div>
 				</div>
 
@@ -214,7 +217,7 @@
 
 				<p class="sponsorship-text">Interested in sponsoring us? Download our sponsorship prospectus file for full informations here: <br></p>
 
-				<a href="./static/sponsorship.pdf" class="sponsor-btn" target="_blank"><button name="Sponsorship Prospectus Download" type="button"> Sponsorship Prospectus<i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></a>
+				<a href="./static/sponsorship.pdf" class="sponsor-btn" target="_blank"><button name="Sponsorship Prospectus Download" type="button" class="button"> Sponsorship Prospectus<i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></a>
 
 				<p>Or send us an <i class="fa fa-envelope-o fa-lg" aria-hidden="true"></i> e-mail at: <br>
 				</p>
@@ -511,7 +514,7 @@
 
 			<div class="faq-hacker-guide">
 				<p>You've got lots of questions and can't remember all the directives and guidelines? Don't sweat it, we got you covered! <br> Download our hacker guide here:</p>
-				<a href="https://www.hackerearth.com/hackathon/" class="hacker-guide-btn" target="_blank"><button name="Guide download" type="button"> Hacker Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></a>
+				<a href="https://www.hackerearth.com/hackathon/" class="hacker-guide-btn" target="_blank"><button name="Guide download" type="button" class="button"> Hacker Guide  <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button></a>
 			</div>
 
 			<div class="faq-contact">
@@ -584,7 +587,7 @@
 		</p>
 
 	</footer>
-
+<script src="src/scripts/script.js"></script>
 </body>
 
 </html>

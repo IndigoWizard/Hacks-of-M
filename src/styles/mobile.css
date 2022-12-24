@@ -3,6 +3,14 @@
 	.landing {
 		justify-content: center;
 	}
+	.pages {
+		padding: 8% 5%;
+	}
+	header {
+		position: fixed;
+		z-index: 1;
+		justify-content: space-between;	
+	}
 }
 
 @media(max-width: 800px) {
@@ -22,6 +30,9 @@
 
 	.registration button {
 		width:80vw;
+	}
+	.pages {
+		padding: 18% 5%;
 	}
 }
 
