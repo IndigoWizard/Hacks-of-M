@@ -118,6 +118,10 @@ nav button {
 	text-decoration: none;
 }
 
+#logo{
+	z-index: 1;
+}
+
 .logo {
 	cursor: pointer;
 	width: 40px;
@@ -130,8 +134,7 @@ nav button {
 }
 
 .navlinks li {
-	/* display: inline-block; */
-	padding: 0 20px;
+	padding: 10px 20px;
 }
 
 .navlinks li a {
@@ -141,9 +144,8 @@ nav button {
 
 .navlinks li a:hover {
 	color: var(--colorVariantDark);
-	border-bottom: var(--colorVariantDark) 3px solid;
-	padding-bottom: 8px;
-	border-radius: 2px;
+	/* border-bottom: var(--colorVariantDark) 3px solid; */
+	/* border-radius: 2px; */
 }
 
 #menu-icon {
@@ -170,34 +172,40 @@ nav button {
 	}
 }
 */
-@media (max-width: 900px){
-	#menu-icon{
-		display: block;
-		width: 40px;
-		z-index: 10;
-		transition: all 0.2s ease 0s;
-		
-	}
-	#menu-icon:hover{
-		color: var(--colorVariantDark2);
+nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+nav #btn-inside {
+	display:none;
+}
 
+@media (max-width: 900px){
+	nav {
+		text-align: center
 	}
-	.fa-solid.fa-bars:active{
-		transform: rotate(-90deg) translateY(-50%);
-		transition: 4s;
-		opacity: 0;
+	
+	nav #btn-outside {
+		display:none;
 	}
-	.fa-solid.fa-chevron-down:active{
-		transform: rotate(90deg) translateY(-50%);
-		transition: 4s;
-		opacity: 0;
+	
+	nav #btn-inside {
+		display: block;
 	}
+	nav button {
+		font-size: 2rem;
+	}
+	
 	.navlinks{
 		position: absolute;
-		top: 115%;
+		top: 10%;
 		right: -100%;
-		width: 270px;
-		height: fit-content;
+		width: 96%;
+		height: 98.5vh;
 		background: var(--colorDarkerUltra);
 		display: flex;
 		flex-direction: column;
@@ -205,14 +213,38 @@ nav button {
 		border-radius: 10px;
 		transition: all .50s ease;
 	}
+	
 	.navlinks a{
 		display: block;
+		font-size: 2rem;
 		margin: 12px 0;
-		padding: 0px 25px;
+		padding-block: 5%;
 		transition: all .50s ease;
+	
 	}
+	
 	.navlinks.open{
 		right: 2%;
+		padding-top: 15%;
+	}
+	
+	#menu-icon{
+		display: block;
+		width: 40px;
+		z-index: 10;
+		transition: all 0.2s ease 0s;
+	}
+	
+	#menu-icon:hover{
+		color: var(--colorVariantDark2);
+	}
+	
+	.fa-solid.fa-bars:active{
+		transform: rotate(-180deg) translateX(5%);
+	}
+	
+	.fa-solid.fa-chevron-down:active{
+		transform: rotate(180deg) translateX(20%);
 	}
 } 
 
