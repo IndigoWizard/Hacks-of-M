@@ -144,8 +144,8 @@ nav button {
 
 .navlinks li a:hover {
 	color: var(--colorVariantDark);
-	/* border-bottom: var(--colorVariantDark) 3px solid; */
-	/* border-radius: 2px; */
+	border-bottom: var(--colorVariantDark) 3px solid;
+	border-radius: 2px;
 }
 
 #menu-icon {
@@ -183,6 +183,9 @@ nav{
 nav #btn-inside {
 	display:none;
 }
+nav #btn-home {
+	display: none;
+}
 
 @media (max-width: 900px){
 	nav {
@@ -196,31 +199,50 @@ nav #btn-inside {
 	nav #btn-inside {
 		display: block;
 	}
+
+	nav #btn-home {
+		display: block;
+	}
+
 	nav button {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	
 	.navlinks{
 		position: absolute;
 		top: 10%;
 		right: -100%;
-		width: 96%;
-		height: 98.5vh;
-		background: var(--colorDarkerUltra);
+		width: 80%;
+		height: fit-content;
+		/* background: var(--colorDarkerUltra); */
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		border-radius: 10px;
 		transition: all .50s ease;
+/*GLASSMORPHISM*/
+		background: rgba( 28, 25, 56, 0.25 );
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		backdrop-filter: blur( 4px );
+		-webkit-backdrop-filter: blur( 4px );
+		border: 1px solid rgba( 255, 255, 255, 0.18 );
 	}
 	
 	.navlinks a{
 		display: block;
-		font-size: 2rem;
+		font-size: 1.5rem;
 		margin: 12px 0;
 		padding-block: 5%;
 		transition: all .50s ease;
 	
+	}
+	
+	.navlinks li a:hover {
+		/* color: var(--colorVariantDark); */
+		/* border-bottom: var(--colorVariantDark) 3px solid; */
+		/* border-radius: 2px; */
+		background-color: var(--colorVariantDark2);
+		border-radius: 5px;
 	}
 	
 	.navlinks.open{
