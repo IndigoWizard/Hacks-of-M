@@ -180,9 +180,22 @@ nav{
 	align-items: center;
 	width: 100%;
 }
+
 nav #btn-inside {
 	display:none;
 }
+
+nav #btn-inside .button{
+	padding: 2% 30%;
+}
+
+nav #btn-menu {
+	display: none;
+	font-weight: 600;
+	font-size: 2.2rem;
+	margin-top: 0;
+}
+
 nav #btn-home {
 	display: none;
 }
@@ -195,13 +208,22 @@ nav #btn-home {
 	nav #btn-outside {
 		display:none;
 	}
+
+	nav #btn-home {
+		display: block;
+	}	
 	
+	nav #btn-menu {
+		display: block;
+	}
+
 	nav #btn-inside {
 		display: block;
 	}
 
-	nav #btn-home {
-		display: block;
+	nav #btn-inside .button:hover{
+		transform: none;
+		padding: 2% 30%;
 	}
 
 	nav button {
@@ -210,9 +232,9 @@ nav #btn-home {
 	
 	.navlinks{
 		position: absolute;
-		top: 10%;
+		top: 5%;
 		right: -100%;
-		width: 80%;
+		width: 96%;
 		height: fit-content;
 		/* background: var(--colorDarkerUltra); */
 		display: flex;
@@ -227,27 +249,27 @@ nav #btn-home {
 		-webkit-backdrop-filter: blur( 4px );
 		border: 1px solid rgba( 255, 255, 255, 0.18 );
 	}
-	
+	.navlinks li {
+		padding: 10px 20px;
+	}
 	.navlinks a{
 		display: block;
 		font-size: 1.5rem;
 		margin: 12px 0;
-		padding-block: 5%;
+		padding-block: 2%;
 		transition: all .50s ease;
 	
 	}
 	
 	.navlinks li a:hover {
-		/* color: var(--colorVariantDark); */
-		/* border-bottom: var(--colorVariantDark) 3px solid; */
-		/* border-radius: 2px; */
+		color: var(--textTitle);
 		background-color: var(--colorVariantDark2);
+		border-bottom: none;
 		border-radius: 5px;
 	}
-	
+
 	.navlinks.open{
 		right: 2%;
-		padding-top: 15%;
 	}
 	
 	#menu-icon{
@@ -266,7 +288,7 @@ nav #btn-home {
 	}
 	
 	.fa-solid.fa-chevron-down:active{
-		transform: rotate(180deg) translateX(20%);
+		transform: rotate(180deg) translateX(25%);
 	}
 } 
 
