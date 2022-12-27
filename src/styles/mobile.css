@@ -1,3 +1,107 @@
+/*////////// HEADER: NAVBAR RESPONSIVE VERISON///////////*/
+@media(max-width: 1280px){
+	header {
+		position: fixed;
+		z-index: 1;
+		justify-content: space-between;	
+	}
+}
+
+@media (max-width: 900px){
+	nav {
+		text-align: center
+	}
+	
+	nav #btn-outside {
+		display:none;
+	}
+
+	nav #btn-home {
+		display: block;
+	}	
+	
+	nav #btn-menu {
+		display: block;
+	}
+
+	nav #btn-inside {
+		display: block;
+	}
+
+	nav #btn-inside .button:hover{
+		transform: none;
+		padding: 2% 30%;
+	}
+
+	nav button {
+		font-size: 1.5rem;
+	}
+	
+	.navlinks{
+		position: absolute;
+		top: 5%;
+		right: -100%;
+		width: 96%;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		border-radius: 10px;
+		transition: all .50s ease;
+		/*GLASSMORPHISM EFFECT*/
+		background: rgba( 28, 25, 56, 0.25 );
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+		backdrop-filter: blur( 4px );
+		-webkit-backdrop-filter: blur( 4px );
+		border: 1px solid rgba( 255, 255, 255, 0.18 );
+	}
+
+	.navlinks li {
+		padding: 10px 20px;
+	}
+
+	.navlinks a{
+		display: block;
+		font-size: 1.5rem;
+		margin: 12px 0;
+		padding-block: 2%;
+		transition: all .50s ease;
+	}
+	
+	.navlinks li a:hover {
+		color: var(--textTitle);
+		border-bottom: none;
+		border-radius: 5px;
+		/*GLASSMORPHISM ON HOVER*/
+		background: rgba( 235, 34, 130, 0.35 );
+		backdrop-filter: blur( 4px );
+		-webkit-backdrop-filter: blur( 4px );
+	}
+
+	.navlinks.open{
+		right: 2%;
+	}
+	
+	#menu-icon{
+		display: block;
+		width: 40px;
+		z-index: 10;
+		transition: all 0.2s ease 0s;
+	}
+	
+	#menu-icon:hover{
+		color: var(--colorVariantDark2);
+	}
+	
+	.fa-solid.fa-bars:active{
+		transform: rotate(-180deg) translateX(5%);
+	}
+	
+	.fa-solid.fa-chevron-down:active{
+		transform: rotate(180deg) translateX(25%);
+	}
+} 
+
 /*////////// LANDING: RESPONSIVE MOBILE VERSION/////////*/
 @media(max-width: 1260px) {
 	.landing {
@@ -6,14 +110,13 @@
 	.pages {
 		padding: 8% 5%;
 	}
-	header {
-		position: fixed;
-		z-index: 1;
-		justify-content: space-between;	
-	}
 }
 
 @media(max-width: 800px) {
+	#landing{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
 	.landing-separartor{
 		width:25vw;
 		height: 4px;
@@ -39,6 +142,10 @@
 /*////////// ABOUT: RESPONSIVE MOBILE VERSION/////////*/
 
 @media (max-width: 800px) {
+	#about {
+		padding-top: 16%;
+		background-color: var(--colorMain);
+	}
 	.about {
 		height: 100%;
 		display: flex;
@@ -129,6 +236,9 @@
 /*////////// CONTACT: RESPONSIVE MOBILE VERSION/////////*/
 
 @media (max-width:810px) {
+	#contact{
+		padding-top: 10%;
+	}
 	.contact {
 		width: 100vw;
 		height: 100%;
