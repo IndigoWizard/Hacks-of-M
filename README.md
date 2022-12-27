@@ -18,6 +18,7 @@ This is the Hacks of M hackathon event's website repo.
 │   │   ├── fonts
 │   │   └── images
 │   └── pages               # Page files
+│   └── scripts             # Script files
 │   └── styles              # Style files
 ├── static                  # Unbundled assets
 
