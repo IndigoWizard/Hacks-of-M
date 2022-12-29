@@ -501,7 +501,8 @@ Team
 	width: 380px;
 }
 
-.img {
+/* General rules for teammates cut-out pictures */
+.img { 
 	pointer-events: none;
 	position: relative;
 	transform: translateY(20px) scale(1.15);
@@ -513,24 +514,56 @@ Team
 	transform: translateY(0) scale(1.2);
 }
 
+/* Teammates pictures */
+
 .img1 {
-	left: 22px;
-	top: 164px;
+	left: 32px;
+	top: 158px;
 	width: 340px;
 }
-
 .img2 {
+	left: 20px;
+	top: 125px;
+	width: 600px;
+}
+
+.img3 {
 	left: -46px;
 	top: 174px;
 	width: 444px;
 }
 
-.img3 {
+.img4 {
+	left: 22px;
+	top: 164px;
+	width: 340px;
+}
+
+.img5 {
+	left: -46px;
+	top: 174px;
+	width: 444px;
+}
+
+.img6 {
 	left: -16px;
 	top: 144px;
 	width: 466px;
 }
 
+.img7 {
+	left: -64px;
+	top: 221px;
+	width: 454px;
+}
+
+.img8 {
+	left: -16px;
+	top: 144px;
+	width: 466px;
+}
+
+/* Teammate profile info*/
 .profile-info {
 	display: flex;
 	flex-direction: column;
@@ -557,19 +590,27 @@ Team
 	color: var(--textMain);
 	font-family: arial;
 	font-size: 16px;
-	font-style: italic;
+	/* font-style: italic; */
 	font-weight: 500;
 	margin: 5px 0;
 }
 
-.profile-contact .fa {
-	margin: 10px;
-	color: wheat;
-	transition: 0.1s ease-in-out;
-	font-size: 24px;
+.profile-contact {
+	width: inherit;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	gap: 8px;
 }
 
-.profile-contact .fa:hover {
+.profile-contact .fa, .fa-brands {
+	margin: 10px;
+	color: silver;
+	transition: 0.1s ease-in-out;
+	font-size: 1.3rem;
+}
+
+.profile-contact .fa:hover, .fa-brands:hover {
 	transition: 0.15s ease-in-out;
 	color: var(--colorVariantDark);
 	cursor: pointer;
