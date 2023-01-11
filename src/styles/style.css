@@ -339,10 +339,17 @@ WEBSITE Main
 	padding: 0 25px;
 }
 
-
+/*
+/////////////////////////// WTH SECTION
+*/
+/*
+/////////////////////////// SCHEDULE TABS TEST
+*/
+.tabs .tab-content {
+	overflow: hidden scroll;
+	max-height: 400px;
+}
 /*////////////////////////////////////////////////
-
-SCHEDULE TABS TEST
 
 TRACKS
 

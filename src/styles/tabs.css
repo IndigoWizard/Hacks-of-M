@@ -1,0 +1,108 @@
+.tabs {
+  position: relative;
+}
+
+.tabs li {
+  float: left;
+  width: 50%;
+  display: block;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  display: block;
+  padding: 25px 0;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background: #d9d9d6;
+  color: #707372;
+  cursor: pointer;
+  position: relative;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.tabs label:hover {
+  background: #7ccbea;
+  color: #fff;
+}
+
+.tabs label span {
+  display: block;
+  font-size: 6em;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.tabs .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 25px;
+  position: absolute;
+  top: 184px;
+  left: 0;
+  background: #fff;
+}
+
+.tabs [id^="tab"]:checked+label {
+  background: #007aff;
+  color: #fff;
+}
+
+.tabs [id^="tab"]:checked+label:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 20px);
+  border: 20px solid transparent;
+  border-bottom-color: #fff;
+}
+
+.tabs [id^="tab"]:checked~[id^="tab-content"] {
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+tr:nth-of-type(even) {
+  background-color: #fff;
+}
+
+tr:first-of-type {
+  padding-top: 50px;
+}
+
+td {
+  border: 0;
+  width: 75%;
+  vertical-align: top;
+  padding: 15px;
+}
+
+td:nth-of-type(2n+1) {
+  width: 25%;
+  text-align: right;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.session-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.session-description {
+  display: block;
+}
